@@ -16,6 +16,6 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - name: Grant execut permission for gradle
-        run: chmod +x gradlew
+        run: chmod +x gradlew - java -jar ./artifacts/app-mbank.jar &
       - name: Build with Gradle
         run: ./gradlew test --info
